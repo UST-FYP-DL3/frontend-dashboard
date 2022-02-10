@@ -1,4 +1,8 @@
-import React, {useEffect} from 'react'
+import React, { useState, useEffect} from 'react'
+
+import { Card, Button, Alert } from "react-bootstrap"
+import { useAuth } from "../../contexts/AuthContext"
+import { Link, useHistory } from "react-router-dom"
 
 import './layout.css'
 
@@ -52,6 +56,24 @@ export default Layout
 // import { Container } from 'react-bootstrap'
 
 const Layout = () => {
+
+    const [error, setError] = useState("")
+    const { currentUser, logout } = useAuth()
+    const history = useHistory()
+
+
+
+    async function handleLogout() {
+        setError("")
+    
+        try {
+          await logout()
+          history.push("/login")
+        } catch {
+          setError("Failed to log out")
+        }
+      }
+
 return (
     <BrowserRouter>
         <Route render = {(props) => (

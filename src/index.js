@@ -32,7 +32,7 @@ document.title = 'Portfolio Dashboard'
 ReactDOM.render(
   <Provider store={store}>
     <React.StrictMode>
-      <Layout />
+      <App />
     </React.StrictMode>
   </Provider>,
   document.getElementById('root')

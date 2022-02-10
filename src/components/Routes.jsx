@@ -7,7 +7,6 @@ import Analytics from '../pages/Analytics'
 import Stocks from '../pages/Stocks'
 import Setting from '../pages/Setting'
 
-import Signup from './Signup/Signup'
 
 const Routes = () => {
     return (
