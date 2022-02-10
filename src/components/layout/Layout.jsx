@@ -57,6 +57,8 @@ export default Layout
 
 const Layout = () => {
 
+    // move the code to TovNav.jsx
+    /*
     const [error, setError] = useState("")
     const { currentUser, logout } = useAuth()
     const history = useHistory()
@@ -73,6 +75,7 @@ const Layout = () => {
           setError("Failed to log out")
         }
       }
+      */
 
 return (
     <BrowserRouter>

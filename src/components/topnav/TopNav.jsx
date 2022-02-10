@@ -1,10 +1,16 @@
-import React from 'react'
+//import React from 'react'
 
 import './topnav.css'
 
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 
 import Dropdown from '../dropdown/Dropdown'
+
+import React, { useState } from "react"
+import { Card, Button, Alert } from "react-bootstrap"
+import { useAuth } from "../../contexts/AuthContext"
+import { Link, useHistory } from "react-router-dom"
+
 
 // import ThemeMenu from '../thememenu/ThemeMenu'
 
@@ -47,6 +53,23 @@ const renderUserMenu =(item, index) => (
 )
 
 const Topnav = () => {
+
+    const [error, setError] = useState("")
+    const { currentUser, logout } = useAuth()
+    const history = useHistory()
+
+    async function handleLogout() {
+        setError("")
+
+        try {
+        await logout()
+        history.push("/login")
+        } catch {
+        setError("Failed to log out")
+        }
+    }
+
+
     return (
         <div className='topnav'>
             <div className="topnav__search">
@@ -71,6 +94,9 @@ const Topnav = () => {
                         renderFooter={() => <Link to='/'>View All</Link>}
                     />
                     {/* dropdown here */}
+                </div>
+                <div className="topnav__right-item">
+                    <Button variant="link" onClick={handleLogout}>Log Out</Button>
                 </div>
 
             </div>
