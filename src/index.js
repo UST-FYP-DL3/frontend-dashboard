@@ -15,11 +15,19 @@ import './assets/css/index.css'
 
 import Layout from './components/layout/Layout'
 
+import Signup from './components/Signup/Signup'
+
+import App from './components/App'
+
+import 'bootstrap/dist/css/bootstrap.min.css'
+
 const store = createStore(
   rootReducer
 )
 
 document.title = 'Portfolio Dashboard'
+
+// <Layout /> original is <App />
 
 ReactDOM.render(
   <Provider store={store}>

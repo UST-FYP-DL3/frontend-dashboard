@@ -62,31 +62,25 @@ const topCustomers = {
             "stockname": "MSFT",
             "unit": 10,
             "price": "$323.45",
-            "capital": "$3234.5"
+            "capital": "$3234.50"
         },
         {
-            "stockname": "MSFT",
-            "unit": 10,
-            "price": "$323.45",
-            "capital": "$3234.5"
+            "stockname": "AAPL",
+            "unit": 23,
+            "price": "$165.45",
+            "capital": "$3805.35"
         },
         {
-            "stockname": "MSFT",
-            "unit": 10,
-            "price": "$323.45",
-            "capital": "$3234.5"
+            "stockname": "LMT",
+            "unit": 6,
+            "price": "$380.13",
+            "capital": "$2280.78"
         },
         {
-            "stockname": "MSFT",
-            "unit": 10,
-            "price": "$323.45",
-            "capital": "$3234.5"
-        },
-        {
-            "stockname": "MSFT",
-            "unit": 10,
-            "price": "$323.45",
-            "capital": "$3234.5"
+            "stockname": "JNJ",
+            "unit": 16,
+            "price": "$162.45",
+            "capital": "$2599.20"
         },
     ]
 }
@@ -126,7 +120,7 @@ const Dashboard = () => {
                             ))
                         }
                     </div>
-                </div>
+                </div>               
                 <div className="col-6">
                     <div className="card full-height">
                         {/* chart */}
@@ -147,7 +141,7 @@ const Dashboard = () => {
                 <div className="col-7">
                     <div className='card'>
                         <div className='card__header'>
-                            <h3>Watchlist</h3>
+                            <h3>Portfolio</h3>
                         </div>
                         <div className='card__body'>
                             <Table
@@ -162,7 +156,17 @@ const Dashboard = () => {
                         </div>
                     </div>
                 </div>
-                <div className="col-5">
+                
+            </div>
+        </div>
+    )
+}
+
+export default Dashboard
+
+
+/*
+<div className="col-5">
                     <div className="card">
                         <div className="card__header">
                             <h3>Post</h3>
@@ -185,9 +189,4 @@ const Dashboard = () => {
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    )
-}
-
-export default Dashboard
+*/                

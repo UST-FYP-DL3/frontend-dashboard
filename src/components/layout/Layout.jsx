@@ -49,22 +49,26 @@ const Layout = () => {
 export default Layout
 */
 
+// import { Container } from 'react-bootstrap'
+
 const Layout = () => {
-    return (
-        <BrowserRouter>
-            <Route render = {(props) => (
-                <div className = 'layout'>
-                    <Sidebar {...props}/>
-                    <div className = 'layout__content'>
-                        <TopNav/>
-                        <div className = 'layout__content-main'>
-                            <Routes/>
-                        </div>
+return (
+    <BrowserRouter>
+        <Route render = {(props) => (
+            <div className = 'layout'>
+                <Sidebar {...props}/>
+                <div className = 'layout__content'>
+                    <TopNav/>
+                    <div className = 'layout__content-main'>
+                        <Routes/>
                     </div>
                 </div>
-            )} />
-        </BrowserRouter>
+            </div>
+        )} />
+    </BrowserRouter>
     )
 }
+
+
 
 export default Layout

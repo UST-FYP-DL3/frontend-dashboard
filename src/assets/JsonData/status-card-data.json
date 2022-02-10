@@ -1,22 +1,22 @@
 [
     {
-        "icon": "bx bx-shopping-bag",
-        "count": "1,995",
-        "title": "Total sales"
+        "icon": "bx bx-money-withdraw",
+        "count": "$600",
+        "title": "Total Profit"
     },
     {
-        "icon": "bx bx-cart",
-        "count": "2,001",
-        "title": "Daily visits"
+        "icon": "bx bx-candles",
+        "count": "$50",
+        "title": "Daily Profit"
+    },
+    {
+        "icon": "bx bx-stats",
+        "count": "$3701",
+        "title": "Total Assets"
     },
     {
         "icon": "bx bx-dollar-circle",
-        "count": "$2,632",
-        "title": "Total income"
-    },
-    {
-        "icon": "bx bx-receipt",
-        "count": "1,711",
-        "title": "Total orders"
+        "count": "$1711",
+        "title": "Cash"
     }
 ]

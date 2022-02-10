@@ -10,8 +10,8 @@
         "icon": "bx bx-bar-chart-alt"
     },
     {
-        "display_name": "Products",
-        "route": "/products",
+        "display_name": "Stocks",
+        "route": "/stocks",
         "icon": "bx bx-user-pin"
     },
     {
